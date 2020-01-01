@@ -23,7 +23,7 @@
 ## Metrics evaluate
     - ACCURACY 
 
-## NOTE:
+## SUMARY: https://github.com/MrShjfu/mnist_vin/blob/master/MNIST_NOTEBOOK.ipynb
     - training on full data without Image Data Generator :TRAIN_ACC = 09974 VAL_ACC = 0.9924 TEST_ACC = 0.9917
     - training on 10% data without Data augmentation: note [OVERFITTING] TRAIN_ACC: ~1.0, VAL_ACC:0.1071 TEST_ACC:0.1135
     - training on 10% data with Data augmentation: note [OVERFITTING] TRAIN_ACC: ~1.0, VAL_ACC:0.1071 TEST_ACC:0.1135
