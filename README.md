@@ -2,7 +2,7 @@
 
     .
     ├── ...  
-    ├── data                                    folder store some images of each epoches traing    
+    ├── data                                    folder store some images of each epoches GAN training    
     ├── generator                               weight of generator model (gan)
     ├── weight_cnn                              weight cnn 
     ├── MNIST_NOTEBOOK.ipynb                    main method for run program     
