@@ -19,6 +19,51 @@
     │   │   ├── train                            train model CNN by default data
     │   │   ├── define_discriminator_model()     method defined discimninator(using for detect fake and real images)
     └── ...
+    
+    .
+    ├── Feature_Platform
+    │   ├── Seq[FeatureRecord]
+    │   │   ├── FeatureRecord
+    |   │   │   ├── mainKey
+    |   │   │   ├── secondaryKey
+    |   │   │   ├── extraKey
+    |   │   │   ├── Seq[FeatureItem]
+    |   │   │   |   ├── FeatureItem = Map <timeDimension, FeatureStat>
+    |   │   │   |   |   ├── TimeDimension
+    |   │   │   |   |   ├── Seq[FeatureMarkMetaData]
+    |   │   │   |   |   ├── FeatureStat
+    |   │   │   |   |   ├── Aggregator[Sum, Count, Mean, std]
+    |   │   │   |   |   ├── Value
+    |   ├── ...
+    └── ...
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    ├── data                                    folder store some images of each epoches GAN training    
+    ├── generator                               weight of generator model (gan)
+    ├── weight_cnn                              weight cnn 
+    ├── MNIST_NOTEBOOK.ipynb                    main method for run program     
+    ├── README.md                  
+    ├── gan_genearor.py
+    │   │   ├── define_discriminator_model()     method defined discimninator(using for detect fake and real images)
+    │   │   ├── define_generator_model()         method defined generator( try to create an real image from latent space)  
+    │   │   ├── define_gan(g_model,d_model)      method defined GAN( from disciminator model and generator)  
+    │   │   ├── train_gan()                      train GAN( try to create an real image from latent space)  
+    ├── image_processing.py
+    │   │   ├── datagen = ImageDataGenerator()   data augmentation by Image generator
+    │   │   ├── get_light_model()                defined model CNN by keras of tensor
+    │   │   ├── train_generator                  train model CNN with data augmentation method
+    │   │   ├── train                            train model CNN by default data
+    │   │   ├── define_discriminator_model()     method defined discimninator(using for detect fake and real images)
+    └── ...
 
 ## Metrics evaluate
     - ACCURACY 
